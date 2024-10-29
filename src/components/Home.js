@@ -49,7 +49,7 @@ function Home({ isLoggedIn, handleLogout }) {
         </nav>
       </header>
       <div className="welcome-section">
-        <h1>Welcome to the Home Page</h1>
+        <h1>Welcome to the Home Page.</h1>
       </div>
     </div>
   );
