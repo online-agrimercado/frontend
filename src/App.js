@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
+import Frontend from './components/Frontend';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home isLoggedIn={isLoggedIn} handleLogout={handleLogout} />} />
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/frontend" element={<Frontend />} />
       </Routes>
     </Router>
   );
